@@ -1,0 +1,3 @@
+--INSERT INTO PO_ORDERS FROM NIKE_PO_ORDERS
+INSERT INTO AMI.DBO.PO_ORDERS (Booking_number,Vendor,Expected_cargo_receipt_date,Expected_cargo_receipt_week,pod_city,pod_province,pod_country,Product_type_code,Product_type,Order_type,po_line_reference1,PO_number,PO_line,SKU_number,Booked_quantity,booked_cartons,booked_weight,booked_cbm,Shipto,po_line_reference2)
+SELECT Booking_number,Vendor,Expected_cargo_receipt_date,Expected_cargo_receipt_week,pod_city,pod_province,pod_country,Product_type_code,Product_type,Order_type,AA_flag,PO_number,PO_line,SKU_number,Booked_quantity,booked_cartons,booked_weight,booked_cbm,Shipto,Demand_key FROM AMI.DBO.NIKE_PO_ORDERS
